@@ -1,0 +1,158 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: eBay.Service.Core.Soap.PictureWatermarkCodeTypeCollection
+// Assembly: eBay.Service, Version=3.1131.0.0, Culture=neutral, PublicKeyToken=1d9d786a5932eaf0
+// MVID: DB37CD86-03E4-4A03-BCFC-56AD7C99FC60
+// Assembly location: D:\Sviluppo\Lazarus\Progetti\Agrozootecnica\Programmi\Gestione eBay\eBayRestApi\eBay.Service.dll
+// XML documentation location: D:\Sviluppo\Lazarus\Progetti\Agrozootecnica\Programmi\Gestione eBay\eBayRestApi\eBay.Service.xml
+
+using System;
+using System.Collections;
+
+
+namespace eBay.Service.Core.Soap
+{
+  /// <summary>
+  /// 
+  /// </summary>
+  [Serializable]
+  public sealed class PictureWatermarkCodeTypeCollection : CollectionBase
+  {
+    /// <summary>
+    /// 
+    /// </summary>
+    public PictureWatermarkCodeTypeCollection()
+    {
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="items"></param>
+    public PictureWatermarkCodeTypeCollection(PictureWatermarkCodeType[] items)
+    {
+      this.AddRange(items);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="items"></param>
+    public PictureWatermarkCodeTypeCollection(PictureWatermarkCodeTypeCollection items)
+    {
+      this.AddRange(items);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public PictureWatermarkCodeType this[int index]
+    {
+      get => (PictureWatermarkCodeType) this.InnerList[index];
+      set => this.InnerList[index] = (object) value;
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsFixedSize => this.InnerList.IsFixedSize;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsReadOnly => this.InnerList.IsReadOnly;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public bool IsSynchronized => this.InnerList.IsSynchronized;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public object SyncRoot => this.InnerList.SyncRoot;
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="item"></param>
+    /// <returns></returns>
+    public int Add(PictureWatermarkCodeType item) => this.InnerList.Add((object) item);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="items"></param>
+    public void AddRange(PictureWatermarkCodeType[] items)
+    {
+      this.InnerList.AddRange((ICollection) items);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="items"></param>
+    public void AddRange(PictureWatermarkCodeTypeCollection items)
+    {
+      this.InnerList.AddRange((ICollection) items);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="item"></param>
+    /// <returns></returns>
+    public bool Contains(PictureWatermarkCodeType item) => this.InnerList.Contains((object) item);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="items"></param>
+    /// <param name="index"></param>
+    public void CopyTo(PictureWatermarkCodeType[] items, int index)
+    {
+      this.InnerList.CopyTo((Array) items, index);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="item"></param>
+    /// <returns></returns>
+    public int IndexOf(PictureWatermarkCodeType item) => this.InnerList.IndexOf((object) item);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="index"></param>
+    /// <param name="item"></param>
+    public void Insert(int index, PictureWatermarkCodeType item)
+    {
+      this.InnerList.Insert(index, (object) item);
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="index"></param>
+    /// <returns></returns>
+    public PictureWatermarkCodeType ItemAt(int index)
+    {
+      return (PictureWatermarkCodeType) this.InnerList[index];
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="item"></param>
+    public void Remove(PictureWatermarkCodeType item) => this.InnerList.Remove((object) item);
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public PictureWatermarkCodeType[] ToArray()
+    {
+      return (PictureWatermarkCodeType[]) this.InnerList.ToArray(typeof (PictureWatermarkCodeType));
+    }
+  }
+}
