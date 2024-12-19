@@ -12,22 +12,15 @@ namespace eBay.Service.Core.Soap
     [XmlType(Namespace = "urn:ebay:apis:eBLBaseComponents")]
     [Serializable]
 
-    public class RegulatoryType
+    public class ResponsiblePersonsType
     {
-        private ManufacturerType mManufacturer;
-        private ResponsiblePersonsType mResponsiblePersons;
+        private ResponsiblePersonType mResponsiblePerson;
         private XmlElementCollection mAny;
 
-        public ManufacturerType Manufacturer    
+        public ResponsiblePersonType ResponsiblePerson
         {
-            get => this.mManufacturer;
-            set => this.mManufacturer = value;
-        }
-
-        public ResponsiblePersonsType ResponsiblePersons
-        {
-            get => this.mResponsiblePersons;
-            set => this.mResponsiblePersons = value;
+            get => this.mResponsiblePerson;
+            set => this.mResponsiblePerson = value;
         }
 
         [XmlAnyElement]
@@ -37,6 +30,4 @@ namespace eBay.Service.Core.Soap
             set => this.mAny = value;
         }
     }
-
-
 }

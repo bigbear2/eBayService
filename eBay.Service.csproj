@@ -41,6 +41,9 @@
   <ItemGroup>
     <Compile Include="Core\Soap\ManufacturerType.cs" />
     <Compile Include="Core\Soap\RegulatoryType.cs" />
+    <Compile Include="Core\Soap\ResponsiblePersonsType.cs" />
+    <Compile Include="Core\Soap\ResponsiblePersonType.cs" />
+    <Compile Include="Core\Soap\TypesType.cs" />
     <Compile Include="Util\MessageSeverity.cs" />
     <Compile Include="Util\MessageType.cs" />
     <Compile Include="Util\ApiLogger.cs" />
